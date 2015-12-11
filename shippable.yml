@@ -2,6 +2,8 @@ language: node_js
 
 node_js:
   - "0.10"
+  
+build_image: shippable/minv2
 
 addons:
   firefox: "23.0"
@@ -16,6 +18,6 @@ before_script:
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
   
-cache: true
+#cache: true
 
 archive: true
