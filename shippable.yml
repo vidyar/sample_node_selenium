@@ -14,10 +14,11 @@ services:
 
 before_script:
   - "export DISPLAY=:99.0"
-  - "/etc/init.d/xvfb start"
+  #- "/etc/init.d/xvfb start"
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
   
 #cache: true
 
 archive: true
+build_image: drydock/u14nodpls:tip 
